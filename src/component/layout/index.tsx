@@ -6,9 +6,9 @@ import Transactions from "./Dashboard/Transactions";
 function DashboardIndex() {
   return (
     <div
-      className={`md:flex   md:overflow-x-hidden md:w-full   md:flex-row md:bg-[#07112D] md:p-[30px]`}
+      className={`md:flex   md:overflow-x-hidden md:w-full   md:flex-row md:bg-[#07112D] md:pl-[10px] md:pr-[20px] md:py-[30px]`}
     >
-      <div className="hidden md:block w-[17%]">
+      <div className="hidden md:block w-[20%]">
         <SideBarIndex />
       </div>
       <div className="overflow-y-auto   w-full md:rounded-[30px] overflow-x-hidden gap-y-1 bg-[#F8F9FB] lg:p-4 relative items-center">

@@ -1,8 +1,8 @@
-const CURRENCY_FORMATTER = new Intl.NumberFormat(undefined, {
+const CURRENCY_FORMATTER = new Intl.NumberFormat("en-NG", {
   currency: "NGN",
   style: "currency",
 });
 
 export function formatCurrency(number: number) {
-  return CURRENCY_FORMATTER.format(number).replace("NGN", "₦");
+  return CURRENCY_FORMATTER.format(number).replace(/(\.|,)00$/g, '');
 }

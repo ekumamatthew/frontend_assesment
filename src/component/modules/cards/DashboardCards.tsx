@@ -11,7 +11,7 @@ export const DashboardCards = (props: dashboard_cards) => {
   const { bg, card_name, amount, src, button1_name, button2_name } = props;
   return (
     <div
-      className={`h-[151px] ${bg} rounded-[12px]  w-[98%] md:w-[372px] lg:w-[300px]  relative p-[16px]`}
+      className={`h-[151px] ${bg} rounded-[12px]  w-[98%] md:w-[24%] lg:w-[24%]  relative p-[16px]`}
     >
       <div className="w-[166px] h-[47px] retative top-[23px] left-[24px] flex flex-col ">
         <p className="leading-[19.1px] text-[14px] font-Nunito font-[400] w-[97px] h-[19px]">
@@ -26,10 +26,10 @@ export const DashboardCards = (props: dashboard_cards) => {
       </div>
 
       <div className="flex flex-row items-start gap-5 relative w-full h-full mt-5 ">
-        <button className=" bg-white/20 w-[112px] h-[40px] relative rounded-[7px] justify-center items-center  text-center">
+        <button className=" bg-white/20 p-[8px] h-[40px] text-[14px] font-[600] relative rounded-[7px] justify-center items-center  text-center">
           {button1_name}
         </button>
-        <button className="bg-white/20 w-[112px] h-[40px] relative justify-center items-center  text-center rounded-[7px]">
+        <button className="bg-white/20 p-[8px] h-[40px] text-[14px] font-[600] relative justify-center items-center  text-center rounded-[7px]">
           {button2_name}
         </button>
       </div>
@@ -62,10 +62,10 @@ export const DashboardCard2 = (props: dashboard_card2) => {
   const { bg, card_name, amount, src, bg_2 } = props;
   return (
     <div
-      className={`h-[154px] ${bg}  rounded-[12px] w-[98%] md:w-[372px] lg:w-[300px] items-center relative p-[12px]`}
+      className={`h-[154px] ${bg}  rounded-[12px] w-[98%] md:w-[24%] lg:w-[24%] items-center relative p-[6px]`}
     >
       <div
-        className={`w-[166px] ${bg_2} w-full p-[8px]  rounded-[10px]  h-[104px] retative top-[23px] left-[24px] flex flex-col  justify-center gap-6 `}
+        className={`w-[166px] ${bg_2} w-full p-[4px]  rounded-[10px]  h-[104px] retative top-[23px] left-[24px] flex flex-col  justify-center gap-3 `}
       >
         <p className="leading-[19.1px] text-[#4F64A7] text-[14px] font-Nunito font-[400] w-[150px] h-[19px]">
           {card_name}
@@ -103,10 +103,10 @@ export const DashboardCard3 = (props: dashboard_card3) => {
 
   return (
     <div
-      className={` ${bg}  rounded-[12px] w-[98%] md:w-[372px] lg:w-[300px]  items-center relative p-[12px]`}
+      className={` ${bg}  rounded-[12px] w-[98%] md:w-[24%] lg:w-[24%]  items-center relative p-[6px]`}
     >
       <div
-        className={`w-[166px] ${bg_2} w-full p-[14px]  rounded-[10px]   retative top-[23px] left-[24px] flex flex-col  justify-center gap-6 `}
+        className={`w-[166px] ${bg_2} w-full p-[7px]  rounded-[10px]   retative top-[23px] left-[24px] flex flex-col  justify-center gap-3 `}
       >
         <div className="flex flex-row justify-between items-start">
           <p className="leading-[15px] text-[#4F64A7] text-[14px] font-Sora font-[500] w-[150px] h-[19px]">
@@ -130,7 +130,7 @@ export const DashboardCard3 = (props: dashboard_card3) => {
                 {tag1}
               </p>
             </div>
-            <p className="leading-[31px] text-[#032282] text-[14px] font-Sora font-[600] w-[126px] h-[25px]">
+            <p className="leading-[31px] text-[#032282] text-[16px] md:text-[14px] font-Sora font-[600] w-[126px] h-[25px]">
               {formatCurrency(tag1_amount!)}
             </p>
           </div>
@@ -147,7 +147,7 @@ export const DashboardCard3 = (props: dashboard_card3) => {
                 {tag2}
               </p>
             </div>
-            <p className="leading-[31px] text-[#032282] text-[14px] font-Sora font-[600] w-[126px] h-[25px]">
+            <p className="leading-[31px] text-[#032282] text-[16px] md:text-[14px] font-Sora font-[600] w-[126px] h-[25px]">
               {formatCurrency(tag2_amount!)}
             </p>
           </div>
@@ -161,7 +161,7 @@ export const DashboardCard3 = (props: dashboard_card3) => {
             <p className="leading-[15px] text-[#4F64A7] text-[12px] font-Nunito font-[400] w-[126px] h-[25px]">
               {tag3}
             </p>
-            <p className="leading-[31px] text-[#032282] text-[14px] font-Sora font-[600] w-[126px] h-[25px]">
+            <p className="leading-[31px] text-[#032282] text-[16px] md:text-[14px] font-Sora font-[600] w-[126px] h-[25px]">
               {formatCurrency(tag3_amount!)}
             </p>
           </div>
@@ -169,7 +169,7 @@ export const DashboardCard3 = (props: dashboard_card3) => {
             <p className="leading-[15px] text-[#4F64A7] text-[12px] font-Nunito font-[400] w-[126px] h-[25px]">
               {tag4}
             </p>
-            <p className="leading-[31px] text-[#032282] text-[14px] font-Sora font-[600] w-[126px] h-[25px]">
+            <p className="leading-[31px] text-[#032282] text-[16px] md:text-[14px] font-Sora font-[600] w-[126px] h-[25px]">
               {formatCurrency(tag4_amount!)}
             </p>
           </div>
